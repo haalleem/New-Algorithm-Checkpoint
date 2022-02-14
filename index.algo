@@ -1,0 +1,28 @@
+ALGORITHM sentence-reader
+VAR
+    sentence, word: STRING;
+    ch: CHAR;
+    s, w, v: INTEGER:= 0;
+    vowel: STRING:= "a", "e", "i", "o", "u";
+BEGIN
+    Read (sentence)
+    wHILE(ch) DO 
+    s:= s+1;
+    END_WHILE
+    write (s)
+
+    Read (sentence)
+
+    wHILE (word <> ch) DO
+    w:= w+1;
+    END_WHILE
+    write(w) 
+
+    Read (sentence)
+   IF(ch in vowel) THEN
+   v:= v+1;
+   END_IF
+   write(v)
+
+
+END
